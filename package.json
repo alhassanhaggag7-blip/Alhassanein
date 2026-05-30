@@ -1,0 +1,11 @@
+{
+  "name": "alhassanain",
+  "version": "1.0.0",
+  "description": "منصة الحسنين القرآنية",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "firebase-admin": "^11.0.0"
+  }
+}
