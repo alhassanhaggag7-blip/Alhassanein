@@ -1,23 +1,7 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/ai",
-      "dest": "/api/ai.js"
-    },
-    {
-      "src": "/api/check-email",
-      "dest": "/api/check-email.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+  "rewrites": [
+    { "source": "/api/ai", "destination": "/api/ai.js" },
+    { "source": "/api/check-email", "destination": "/api/check-email.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
